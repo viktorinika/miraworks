@@ -199,7 +199,7 @@ h5 {
 }
 
 .title {
-  font-family: "Cairo";
+  font-family: "Cairo", sans-serif;
   font-weight: 600;
   line-height: 1.2;
   color: #31323a;
@@ -209,7 +209,7 @@ h5 {
 }
 
 .text {
-  font-family: "Manrope";
+  font-family: "Manrope", sans-serif;
   line-height: 1.62;
   color: #7a8096;
 }
@@ -221,11 +221,11 @@ h5 {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  font-family: "Manrope";
+  font-family: "Manrope", sans-serif;
   font-weight: 600;
   line-height: 2;
   color: #121654;
-  box-shadow: 0px 2px 4px 0px rgba(17, 24, 28, 0.05);
+  box-shadow: 0 2px 4px 0 rgba(17, 24, 28, 0.05);
   background-color: transparent;
   padding: 0.375rem 1rem;
   border: 0.0625rem solid #121654;
@@ -258,6 +258,10 @@ h5 {
     background-color: rgb(30, 39, 145);
     color: #ffffff;
   }
+}
+
+* {
+  user-select: none;
 }
 
 .header {
@@ -460,7 +464,7 @@ h5 {
 .menu__item--parent::after {
   content: "";
   background-image: url("../img/icons/ch-down.svg");
-  transition: transform 0.5s;
+  transition: transform 0.3s;
   flex: 0 0 0.625rem;
   height: 0.375rem;
 }
@@ -471,7 +475,7 @@ h5 {
   pointer-events: all;
 }
 .menu__item--parent:hover::after {
-  rotate: -180deg;
+  transform: rotate(-180deg);
 }
 @media (max-width: 47.99875em) {
   .menu__item--parent {
@@ -484,6 +488,8 @@ h5 {
   line-height: 1.6;
   color: #ffffff;
   transition: all 0.5s;
+  cursor: pointer;
+  user-select: none;
 }
 @media (any-hover: hover) {
   .menu__link:hover {
@@ -601,7 +607,7 @@ h5 {
   }
 }
 .sub-menu__list {
-  box-shadow: 0px 1px 2px 0px rgba(40, 43, 48, 0.05);
+  box-shadow: 0 1px 2px 0 rgba(40, 43, 48, 0.05);
   border: 0.0625rem solid #e5e7eb;
   background-color: #ffffff;
   padding: 1rem 1.5rem;
@@ -617,7 +623,7 @@ h5 {
   }
 }
 .sub-menu__link {
-  font-family: "Manrope";
+  font-family: "Manrope", sans-serif;
   font-weight: 500;
   line-height: 1.6;
   color: #31323a;
