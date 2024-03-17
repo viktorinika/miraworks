@@ -35,8 +35,7 @@ $containerWidth: $maxWidthContainer + $containerPadding;
 
 
 body {
-    font-family: 'Manrope';
-    font-family: 'Cairo';
+    font-family: 'Manrope', sans-serif;
     color: $textDarkColor;
 
 

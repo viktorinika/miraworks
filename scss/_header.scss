@@ -183,7 +183,7 @@
             bottom: 0;
         }
         span {
-            top: calc(50% - 1);
+            top: calc(50% - toRem(1));
         }
         .menu-open & {
             span {
