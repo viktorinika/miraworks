@@ -1,0 +1,121 @@
+.page {
+    
+    &__contact {
+        @include adaptiveValue ('padding-top', 100, 60);
+    }
+}
+.contact {
+    background-color: $GrayColor;
+}
+.row-contact {
+    display: flex;
+    gap: toRem(24);
+    justify-content: space-between;
+    align-items: center;
+    @media (max-width: toEm(750)) {
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+}
+.address-contact {
+    flex: 0 1 toRem(546);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: toRem(24);
+    padding: toRem(24) 0;
+    @media (max-width: toEm(750)) {
+        flex: 100%;
+    }
+    &__text {
+        display: grid;
+        gap: toRem(20);
+    }
+
+    &__link {
+        font-style: normal;
+        line-height: 1.6;
+        transition: all 0.3s;
+        @media (any-hover:hover) {
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+}
+
+.form-contact {
+    flex: 0 1 toRem(472);
+    background-color: $whiteColor;
+    box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.05);
+    border: 1px solid $textWhiteColor;
+    border-radius: toRem(16);
+    @include adaptiveValue ('padding', 32, 16);
+    overflow: hidden;
+    display: block;
+    .show & {
+        display: none;
+    }
+}
+.form {
+    display: grid;
+    gap:  toRem(15);  
+
+    &__line {
+        display: grid;
+        gap: toRem(10);
+    }
+
+    &__label {
+    font-size: toRem(14);
+    font-weight: 600;
+    line-height: 1.36;
+    color: $darkColor;
+    }
+
+    &__input {
+        border: 1px solid rgba(229, 231, 235, 1);
+        background-color: rgba(246, 247, 248, 1);
+        padding: toRem(10) toRem(16);
+        border-radius: toRem(10);
+    }
+
+}
+
+.thank {
+    box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.05);
+    border: 1px solid rgba(229, 231, 235, 1);
+    background-color: $whiteColor;
+    padding: toRem(32);
+    border-radius: toRem(16);
+    overflow: hidden;
+    flex: 0 1 toRem(472);
+    
+    &__body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: toRem(24);
+        
+    }
+
+    &__img {
+        max-width: toRem(32);
+        object-fit: cover;
+        aspect-ratio: 1/1;
+    }
+
+    &__btn {
+        width: 100%;
+    }
+    
+    display: none;
+    .show & {
+        display: block;
+    }
+}
+
+

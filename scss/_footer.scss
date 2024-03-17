@@ -1,0 +1,128 @@
+.footer {
+    border-top: 1px solid $textWhiteColor;
+    background-color: $GrayColor;
+}
+.top-footer {
+    @include adaptiveValue ('padding-top', 100, 60);
+    @include adaptiveValue ('padding-bottom', 70, 40);
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: toRem(60);
+    @media (max-width: toEm(716)) {
+        display: flex;
+        justify-content: space-around;
+        
+    }
+
+    &__info {
+    }
+
+    &__menu {
+    }
+}
+.info-footer {
+
+    &__block {
+        display: grid;
+        gap: toRem(23);
+        max-width: toRem(300);
+    }
+
+    &__logo {
+        display: inline-block;
+        max-width: toRem(150);
+        @media (any-hover:hover) {
+            &:hover {
+                opacity: 0.7;
+            }
+        }
+    }    
+    &__img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        aspect-ratio: 149/22;
+        & img {
+            max-width: 100%;
+        }
+    }
+
+    &__text {
+    }
+}
+
+.menu-footer {
+    display: flex;
+    gap: toRem(90);
+    flex-wrap: wrap;
+
+    &__block {
+        display: grid;
+        gap: toRem(12);
+    }
+
+    // .menu-footer__title
+
+    &__title {
+        font-family: 'Manrope';
+        line-height: 1.6;
+        font-weight: 600;
+        color: $darkColor;
+    }
+
+    &__list {
+        display: grid;
+        gap: toRem(12);
+    }
+
+    &__item {
+    }
+
+    &__link {
+        font-family: 'Manrope';
+        font-weight: 500;
+        line-height: 1.6;
+        transition: all 0.3s;
+        @media (any-hover:hover) {
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+}
+
+.down-footer {
+    border-top: 1px solid $textWhiteColor;
+    @include adaptiveValue ('padding-top', 32, 25);
+    @include adaptiveValue ('padding-bottom', 32, 25);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: toRem(30);
+
+    &__copi {
+    }
+
+    &__social {
+
+    }
+}
+.social-icons {
+    display: flex;
+    align-items: center;
+    gap: toRem(12);
+    
+
+    &__link {
+        flex: 0 0 toRem(20);
+        & img {
+            max-width: 100%;     
+        } 
+        @media (any-hover:hover) {
+            &:hover {
+                opacity: 0.7;
+            }
+        }  
+    }
+}

@@ -1,0 +1,136 @@
+
+.page {
+    &__hero {
+    }
+    &__about {
+        @include adaptiveValue ('padding-top', 120, 60);
+        @include adaptiveValue ('padding-bottom', 120, 60);
+    }
+    &__partners {
+        padding: toRem(16) 0;
+    }
+    &__questions {
+    }
+    &__warpinator {
+    }
+}
+
+.hero--secondary {
+    background: url("../img/background/gorizont-dark-gradient.svg") no-repeat center / cover,
+                url("../img/background/bg-image.svg") no-repeat center / cover,
+                $BlueColor; 
+    @include adaptiveValue ('padding-bottom', 120, 60);
+}
+
+//--------------------------------------------------------
+
+.about {
+    background-color: $GrayColor;
+    // .about__container
+
+    &__container {
+    }
+
+    &__rows {
+        display: flex;
+        flex-direction: column;
+        @include adaptiveValue('row-gap', 120, 40);
+    }
+
+    &__row {
+
+    }
+}
+.row-about {
+    display: flex;
+    justify-content: space-between;
+    @include adaptiveValue('gap', 48, 16);
+    &--revers {
+        flex-direction: row-reverse;
+    }
+    @media (max-width: toEm(991.98)) {
+        flex-wrap: wrap;
+        &__img {
+            flex: 0 1 100%;
+        }
+    }
+
+    &__content {
+    }
+
+    &__img {
+        flex: 0 1 50%;
+        align-items: center;
+        justify-content: center;
+        object-fit: cover;
+        & img {
+            max-width: 100%;
+        }
+        @media (max-width: toEm(991.98)) {
+            flex: 1 1 100%;
+        }
+    }
+}
+.content-row {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding: toRem(24) 0;
+    gap: toRem(16);
+    max-width:  toRem(400);
+    @media (max-width: toEm(991.98)) {
+        max-width: 100%;
+    }
+
+    &__label {
+        &:not(:last-child) {
+            margin-bottom:toRem(24);
+        }
+    }
+
+    &__text {
+        & p {
+            &:not(:last-child) {
+                margin-bottom:toRem(16);
+            }
+        }
+    }
+}
+//----------------------------------
+
+.partners {
+    background-color: $GrayColor;
+
+    &__container {
+        display: grid;
+        @include adaptiveValue ('gap', 40, 30);
+    }
+
+    &__title {
+        font-family: 'Manrope';
+        font-size: toRem(16);
+        line-height: 1.6;
+        text-align: center;
+
+    }
+
+    &__logos {
+        display: flex;
+        justify-content: center;
+        @include adaptiveValue ('gap', 30, 16); 
+        flex-wrap: wrap;
+    }
+
+    &__logo {
+        max-width: toRem(116);
+    }
+
+    &__img {
+        width: 100%;
+        aspect-ratio: 116 / 40;
+        object-fit: contain;
+    }
+}
+
+//-------------------------------------

@@ -1,0 +1,68 @@
+@use "sass:math";
+
+$minWidth: 320;
+
+$maxWidth: 1440;
+
+$maxWidthContainer: 1140;
+
+$containerPadding: 30;
+
+// Ширина спрацьовування першого брейкпоінту
+$containerWidth: $maxWidthContainer + $containerPadding;
+@import"_reset.scss";
+@import"_vars.scss";
+@import"_functions.scss";
+
+
+// компоненти
+@import"_common.scss";
+
+@import"_header.scss";
+
+@import"_footer.scss";
+
+// сторінки
+@import"_home.scss";
+
+@import"_products.scss";
+
+@import"_about.scss";
+
+@import"_services.scss";
+
+@import"_contact.scss";
+
+
+body {
+    font-family: 'Manrope';
+    font-family: 'Cairo';
+    color: $textDarkColor;
+
+
+    &.menu-open {
+        overflow: hidden;
+        touch-action: none;
+        overscroll-behavior: none;
+    }
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+    overflow: clip;
+}
+
+.wrapper > main {
+    flex-grow: 1;
+}
+
+[class*= __container] {
+    max-width: toEm(1170);
+    padding-left: toEm(15);
+    padding-right: toEm(15);
+    margin: 0 auto;
+}
+
+// ----------------------------

@@ -1,0 +1,82 @@
+
+.page {
+
+    &__hero {
+        &.hero--products {
+            @include adaptiveValue ('padding-top', 196, 80);
+            @include adaptiveValue ('padding-bottom', 0, 0); 
+        }
+    }
+    &__products {
+        @include adaptiveValue ('padding-top', 120, 60);
+        @include adaptiveValue ('padding-bottom', 120, 60);
+    }
+}
+
+.hero--products {
+    background: url("../img/background/gorizont-dark-gradient.svg") no-repeat center / cover,
+                url("../img/background/bg-image.svg") no-repeat center / cover,
+                $BlueColor;              
+}
+
+.hero {
+
+    &__container {
+        .hero--image & {
+            display: flex;
+            flex-direction: column;
+            gap: toRem(60);
+            
+        }
+    }
+    &__image {
+        border-radius: toRem(16) toRem(16) 0 0;
+        overflow: hidden;
+        border: 1px solid $textWhiteColor;
+        border-bottom: transparent;
+        background-color: rgba(18, 22, 84, 0.08);
+        & img {
+            width: 100%;
+            object-fit: contain;
+            // aspect-ratio: 1440 / 613;
+        }
+    }
+}
+.block-hero {
+    &__btn {
+        @media (max-width: toEm(375)) {
+            width: 100%;
+        }
+    }
+}
+.products {
+    &--not-padding-bottom {
+        padding-bottom: 0;
+    }
+}
+//------------------------
+
+.colomn-product {
+    &--footer-content {
+        & .footer-content {
+            display: flex;
+            gap: toRem(20);
+        
+            &__block {
+                display: grid;
+                gap: toRem(4);
+            }
+        }    
+    }
+}
+
+// .footer-content {
+//     display: flex;
+//     gap: toRem(20);
+
+//     &__block {
+//         display: grid;
+//         gap: toRem(4);
+//     }
+
+// }

@@ -1,0 +1,101 @@
+
+// lebel
+.label {
+    display: inline-block;
+    font-family: 'Manrope', serif;
+    font-size: toRem(14);
+    font-weight: 500;
+    line-height: 1.57;
+    letter-spacing: toRem(1.5);
+    text-transform: uppercase;
+    padding: toRem(6) toRem(16);
+    border: toRem(1) solid $textWhiteColor;
+    border-radius: toRem(50);
+    background-color: $whiteColor;
+    color: $darkColor;
+    &--white {
+        background-color: transparent;
+        color: $whiteColor;
+    }
+}
+h1 {
+    @include adaptiveValue('font-size',68, 48);
+}
+h2 {
+    @include adaptiveValue('font-size',36, 30);
+}
+h3 {
+    @include adaptiveValue('font-size',28, 22);
+    line-height: 1.4;
+}
+h4 {
+    @include adaptiveValue('font-size',20, 18);
+}
+h5 {
+    font-size: toRem(16);
+}
+
+.title {
+    font-family: 'Cairo';
+    font-weight: 600;
+    line-height: 1.2;
+    color: $darkColor;
+    &--white {
+        color: $whiteColor;
+    }
+}
+
+.text {
+    font-family: 'Manrope';
+    line-height: 1.62;
+    color: $textDarkColor;
+    &--white {
+        color: $textWhiteColor;
+    }
+}
+
+.button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Manrope';
+    font-weight: 600;
+    line-height: 2;
+    color: $BlueColor;
+    box-shadow: 0px 2px 4px 0px rgba(17, 24, 28, 0.05);
+    background-color: transparent;
+    padding: toRem(6) toRem(16);
+    border: toRem(1) solid $BlueColor;
+    border-radius: toRem(8);
+    transition: all 0.3s;
+    @media (any-hover:hover) {
+        &:hover {
+            background-color: rgba(26, 37, 185, 1);
+            color: $whiteColor;
+        }
+    }
+
+    &--yellow {
+        background-color: $yellowColor;
+        border: toRem(1) solid transparent;
+        @media (any-hover:hover) {
+            &:hover {
+                background-color: $yellowHoverColor;
+                color: $BlueColor;
+                // transform: translateY(3px);
+            }
+        }
+    }
+    &--dark {
+        background-color: $BlueColor;
+        border: toRem(1) solid transparent;
+        color: $whiteColor;
+        @media (any-hover:hover) {
+            &:hover {
+                background-color: rgba(30, 39, 145, 1);
+                color: $whiteColor;
+                // transform: translateY(3px);
+            }
+        }
+    }
+}
