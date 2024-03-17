@@ -91,12 +91,12 @@ a {
   padding: 0.375rem 1rem;
   border: 0.0625rem solid #e5e7eb;
   border-radius: 3.125rem;
-  background-color: rgb(255, 255, 255);
-  color: rgb(49, 50, 58);
+  background-color: #ffffff;
+  color: #31323a;
 }
 .label--white {
   background-color: transparent;
-  color: rgb(255, 255, 255);
+  color: #ffffff;
 }
 
 @media (min-width: 73.125em) {
@@ -202,16 +202,16 @@ h5 {
   font-family: "Cairo";
   font-weight: 600;
   line-height: 1.2;
-  color: rgb(49, 50, 58);
+  color: #31323a;
 }
 .title--white {
-  color: rgb(255, 255, 255);
+  color: #ffffff;
 }
 
 .text {
   font-family: "Manrope";
   line-height: 1.62;
-  color: rgb(122, 128, 150);
+  color: #7a8096;
 }
 .text--white {
   color: #e5e7eb;
@@ -224,45 +224,45 @@ h5 {
   font-family: "Manrope";
   font-weight: 600;
   line-height: 2;
-  color: rgb(18, 22, 84);
+  color: #121654;
   box-shadow: 0px 2px 4px 0px rgba(17, 24, 28, 0.05);
   background-color: transparent;
   padding: 0.375rem 1rem;
-  border: 0.0625rem solid rgb(18, 22, 84);
+  border: 0.0625rem solid #121654;
   border-radius: 0.5rem;
   transition: all 0.3s;
 }
 @media (any-hover: hover) {
   .button:hover {
     background-color: rgb(26, 37, 185);
-    color: rgb(255, 255, 255);
+    color: #ffffff;
   }
 }
 .button--yellow {
-  background-color: rgb(237, 253, 118);
+  background-color: #edfd76;
   border: 0.0625rem solid transparent;
 }
 @media (any-hover: hover) {
   .button--yellow:hover {
-    background-color: rgb(216, 243, 40);
-    color: rgb(18, 22, 84);
+    background-color: #d8f328;
+    color: #121654;
   }
 }
 .button--dark {
-  background-color: rgb(18, 22, 84);
+  background-color: #121654;
   border: 0.0625rem solid transparent;
-  color: rgb(255, 255, 255);
+  color: #ffffff;
 }
 @media (any-hover: hover) {
   .button--dark:hover {
     background-color: rgb(30, 39, 145);
-    color: rgb(255, 255, 255);
+    color: #ffffff;
   }
 }
 
 .header {
   position: fixed;
-  background-color: rgb(18, 22, 84);
+  background-color: #121654;
   top: 0;
   left: 0;
   width: 100%;
@@ -337,7 +337,7 @@ h5 {
     height: 100%;
     top: 0;
     left: -100%;
-    background-color: rgb(18, 22, 84);
+    background-color: #121654;
     transition: all 0.3s;
     z-index: 2;
     overflow: auto;
@@ -482,12 +482,12 @@ h5 {
   font-family: "Manrope", serif;
   font-weight: 500;
   line-height: 1.6;
-  color: rgb(255, 255, 255);
+  color: #ffffff;
   transition: all 0.5s;
 }
 @media (any-hover: hover) {
   .menu__link:hover {
-    color: rgb(237, 253, 118);
+    color: #edfd76;
     text-decoration: underline;
   }
 }
@@ -557,7 +557,7 @@ h5 {
     position: absolute;
     width: 100%;
     height: 0.125rem;
-    background-color: rgb(255, 255, 255);
+    background-color: #ffffff;
   }
   .icon-menu::before {
     top: 0;
@@ -603,7 +603,7 @@ h5 {
 .sub-menu__list {
   box-shadow: 0px 1px 2px 0px rgba(40, 43, 48, 0.05);
   border: 0.0625rem solid #e5e7eb;
-  background-color: rgb(255, 255, 255);
+  background-color: #ffffff;
   padding: 1rem 1.5rem;
   border-radius: 1rem;
   min-width: 15.625rem;
@@ -612,7 +612,7 @@ h5 {
 }
 @media (max-width: 47.99875em) {
   .sub-menu__list {
-    background-color: rgb(18, 22, 84);
+    background-color: #121654;
     border: 0.0625rem solid transparent;
   }
 }
@@ -620,7 +620,7 @@ h5 {
   font-family: "Manrope";
   font-weight: 500;
   line-height: 1.6;
-  color: rgb(49, 50, 58);
+  color: #31323a;
   transition: all 0.3s;
 }
 @media (any-hover: hover) {
@@ -630,14 +630,14 @@ h5 {
 }
 @media (max-width: 47.99875em) {
   .sub-menu__link {
-    color: rgb(255, 255, 255);
+    color: #ffffff;
     font-size: 1.5rem;
   }
 }
 
 .footer {
   border-top: 1px solid #e5e7eb;
-  background-color: rgb(246, 247, 248);
+  background-color: #f6f7f8;
 }
 
 .top-footer {
@@ -732,7 +732,7 @@ h5 {
   font-family: "Manrope";
   line-height: 1.6;
   font-weight: 600;
-  color: rgb(49, 50, 58);
+  color: #31323a;
 }
 .menu-footer__list {
   display: grid;
@@ -1021,11 +1021,11 @@ h5 {
 }
 
 .hero {
-  background: url("../img/background/vertical-gradient.svg") no-repeat center/cover, url("../img/background/gorizont-gradient.svg") no-repeat center/cover, url("../img/background/main-bg-image.svg") no-repeat center/cover, rgb(18, 22, 84);
+  background: url("../img/background/vertical-gradient.svg") no-repeat center/cover, url("../img/background/gorizont-gradient.svg") no-repeat center/cover, url("../img/background/main-bg-image.svg") no-repeat center/cover, #121654;
   min-height: 100vh;
 }
 .hero--secondary {
-  background: url("../img/background/gorizont-dark-gradient.svg") no-repeat center/cover, url("../img/background/bg-image.svg") no-repeat center/cover, rgb(18, 22, 84);
+  background: url("../img/background/gorizont-dark-gradient.svg") no-repeat center/cover, url("../img/background/bg-image.svg") no-repeat center/cover, #121654;
   min-height: auto;
 }
 @media (min-width: 73.125em) {
@@ -1110,7 +1110,7 @@ p .block-hero__text :not(:last-child) {
 }
 
 .products {
-  background-color: rgb(246, 247, 248);
+  background-color: #f6f7f8;
 }
 @media (min-width: 73.125em) {
   .products__header {
@@ -1193,9 +1193,9 @@ p .block-hero__text :not(:last-child) {
 .colomn-product {
   display: flex;
   box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.05);
-  border: 1px solid rgb(246, 247, 248);
+  border: 1px solid #f6f7f8;
   overflow: hidden;
-  background: rgb(255, 255, 255);
+  background: #ffffff;
   border-radius: 1.5rem;
   padding: 3rem 0;
 }
@@ -1219,7 +1219,7 @@ p .block-hero__text :not(:last-child) {
   border-radius: 1rem 0 0 1rem;
   overflow: hidden;
   border: 1px solid #e5e7eb;
-  background-color: rgb(246, 247, 248);
+  background-color: #f6f7f8;
 }
 .colomn-product--reverse .colomn-product__image {
   border-radius: 0 1rem 1rem 0;
@@ -1271,11 +1271,11 @@ p .block-hero__text :not(:last-child) {
 }
 
 .services {
-  background: url("../img/background/gorizont-dark-gradient.svg") no-repeat center/cover, url("../img/background/bg-image.svg") no-repeat center/cover, rgb(18, 22, 84);
+  background: url("../img/background/gorizont-dark-gradient.svg") no-repeat center/cover, url("../img/background/bg-image.svg") no-repeat center/cover, #121654;
 }
 .services--white {
   background: none;
-  background-color: rgb(246, 247, 248);
+  background-color: #f6f7f8;
   padding-bottom: 0;
 }
 @media (min-width: 73.125em) {
@@ -1341,7 +1341,7 @@ p .block-hero__text :not(:last-child) {
 }
 
 .item-services {
-  background: rgb(18, 22, 84);
+  background: #121654;
   display: flex;
   justify-content: space-between;
   gap: 0.75rem;
@@ -1352,7 +1352,7 @@ p .block-hero__text :not(:last-child) {
   border-radius: 1rem;
 }
 .item-services--white {
-  background-color: rgb(255, 255, 255);
+  background-color: #ffffff;
 }
 @media (max-width: 34.1875em) {
   .item-services {
@@ -1425,7 +1425,7 @@ p .block-hero__text :not(:last-child) {
 }
 
 .questions {
-  background-color: rgb(246, 247, 248);
+  background-color: #f6f7f8;
 }
 @media (min-width: 73.125em) {
   .questions__header {
@@ -1492,7 +1492,7 @@ p .block-hero__text :not(:last-child) {
 .row-questions {
   box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.05);
   border: 1px solid #e5e7eb;
-  background-color: rgb(255, 255, 255);
+  background-color: #ffffff;
   padding: 1.5rem 2rem;
   border-radius: 1rem;
   display: grid;
@@ -1503,11 +1503,11 @@ p .block-hero__text :not(:last-child) {
   font-size: 1.25rem;
 }
 .warpinator {
-  background-color: rgb(246, 247, 248);
+  background-color: #f6f7f8;
 }
 .warpinator__body {
   display: flex;
-  background-color: rgb(18, 22, 84);
+  background-color: #121654;
   border: 1px solid #e5e7eb;
   border-radius: 1.5rem;
   overflow: hidden;
@@ -1645,7 +1645,7 @@ p .block-hero__text :not(:last-child) {
 }
 
 .hero--products {
-  background: url("../img/background/gorizont-dark-gradient.svg") no-repeat center/cover, url("../img/background/bg-image.svg") no-repeat center/cover, rgb(18, 22, 84);
+  background: url("../img/background/gorizont-dark-gradient.svg") no-repeat center/cover, url("../img/background/bg-image.svg") no-repeat center/cover, #121654;
 }
 
 .hero--image .hero__container {
@@ -1732,7 +1732,7 @@ p .block-hero__text :not(:last-child) {
   padding: 1rem 0;
 }
 .hero--secondary {
-  background: url("../img/background/gorizont-dark-gradient.svg") no-repeat center/cover, url("../img/background/bg-image.svg") no-repeat center/cover, rgb(18, 22, 84);
+  background: url("../img/background/gorizont-dark-gradient.svg") no-repeat center/cover, url("../img/background/bg-image.svg") no-repeat center/cover, #121654;
 }
 @media (min-width: 73.125em) {
   .hero--secondary {
@@ -1758,7 +1758,7 @@ p .block-hero__text :not(:last-child) {
 }
 
 .about {
-  background-color: rgb(246, 247, 248);
+  background-color: #f6f7f8;
 }
 .about__rows {
   display: flex;
@@ -1860,7 +1860,7 @@ p .block-hero__text :not(:last-child) {
 }
 
 .partners {
-  background-color: rgb(246, 247, 248);
+  background-color: #f6f7f8;
 }
 .partners__container {
   display: grid;
@@ -1931,12 +1931,12 @@ p .block-hero__text :not(:last-child) {
 
 .services .services--white {
   background: none;
-  background-color: rgb(246, 247, 248);
+  background-color: #f6f7f8;
   padding-bottom: 0;
 }
 
 .item-services .item-services--white {
-  background-color: rgb(255, 255, 255);
+  background-color: #ffffff;
 }
 
 .item-services__img {
@@ -2013,7 +2013,7 @@ p .block-hero__text :not(:last-child) {
 }
 
 .contact {
-  background-color: rgb(246, 247, 248);
+  background-color: #f6f7f8;
 }
 
 .row-contact {
@@ -2060,7 +2060,7 @@ p .block-hero__text :not(:last-child) {
 
 .form-contact {
   flex: 0 1 29.5rem;
-  background-color: rgb(255, 255, 255);
+  background-color: #ffffff;
   box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.05);
   border: 1px solid #e5e7eb;
   border-radius: 1rem;
@@ -2105,7 +2105,7 @@ p .block-hero__text :not(:last-child) {
   font-size: 0.875rem;
   font-weight: 600;
   line-height: 1.36;
-  color: rgb(49, 50, 58);
+  color: #31323a;
 }
 .form__input {
   border: 1px solid rgb(229, 231, 235);
@@ -2117,7 +2117,7 @@ p .block-hero__text :not(:last-child) {
 .thank {
   box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.05);
   border: 1px solid rgb(229, 231, 235);
-  background-color: rgb(255, 255, 255);
+  background-color: #ffffff;
   padding: 2rem;
   border-radius: 1rem;
   overflow: hidden;
@@ -2146,7 +2146,7 @@ p .block-hero__text :not(:last-child) {
 body {
   font-family: "Manrope";
   font-family: "Cairo";
-  color: rgb(122, 128, 150);
+  color: #7a8096;
 }
 body.menu-open {
   overflow: hidden;
