@@ -56,7 +56,7 @@
 }
 //------------------------
 
-.colomn-product {
+.column-product {
     &--footer-content {
         & .footer-content {
             display: flex;
@@ -69,14 +69,3 @@
         }    
     }
 }
-
-// .footer-content {
-//     display: flex;
-//     gap: toRem(20);
-
-//     &__block {
-//         display: grid;
-//         gap: toRem(4);
-//     }
-
-// }

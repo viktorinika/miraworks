@@ -735,7 +735,7 @@ h5 {
   gap: 0.75rem;
 }
 .menu-footer__title {
-  font-family: "Manrope";
+  font-family: "Manrope", sans-serif;
   line-height: 1.6;
   font-weight: 600;
   color: #31323a;
@@ -745,7 +745,7 @@ h5 {
   gap: 0.75rem;
 }
 .menu-footer__link {
-  font-family: "Manrope";
+  font-family: "Manrope", sans-serif;
   font-weight: 500;
   line-height: 1.6;
   transition: all 0.3s;
@@ -807,6 +807,7 @@ h5 {
     padding-bottom: 1.5625rem;
   }
 }
+
 .social-icons {
   display: flex;
   align-items: center;
@@ -1140,32 +1141,33 @@ p .block-hero__text :not(:last-child) {
     margin-bottom: 2.5rem;
   }
 }
-.products__colomns {
+.products__columns {
   display: flex;
   flex-direction: column;
 }
 @media (min-width: 73.125em) {
-  .products__colomns {
+  .products__columns {
     row-gap: 3.75rem;
   }
 }
 @media (min-width: 20em) and (max-width: 73.125em) {
   @supports (row-gap: clamp( 2.5rem , 2.0294117647rem  +  2.3529411765vw , 3.75rem )) {
-    .products__colomns {
+    .products__columns {
       row-gap: clamp( 2.5rem , 2.0294117647rem  +  2.3529411765vw , 3.75rem );
     }
   }
   @supports not (row-gap: clamp( 2.5rem , 2.0294117647rem  +  2.3529411765vw , 3.75rem )) {
-    .products__colomns {
+    .products__columns {
       row-gap: calc(2.5rem + 1.25 * (100vw - 20rem) / 53.125);
     }
   }
 }
 @media (max-width: 20em) {
-  .products__colomns {
+  .products__columns {
     row-gap: 2.5rem;
   }
 }
+
 .header-products {
   display: flex;
   flex-direction: column;
@@ -1196,56 +1198,56 @@ p .block-hero__text :not(:last-child) {
   }
 }
 
-.colomn-product {
+.column-product {
   display: flex;
-  box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.05);
+  box-shadow: 0 1px 2px 0 rgba(16, 24, 40, 0.05);
   border: 1px solid #f6f7f8;
   overflow: hidden;
   background: #ffffff;
   border-radius: 1.5rem;
   padding: 3rem 0;
 }
-.colomn-product--reverse {
+.column-product--reverse {
   flex-direction: row-reverse;
 }
 @media (max-width: 71.75em) {
-  .colomn-product {
+  .column-product {
     flex-wrap: wrap;
     padding: 2rem 3rem 3rem;
     gap: 2rem;
   }
 }
 @media (max-width: 47.99875em) {
-  .colomn-product {
+  .column-product {
     padding: 2rem 1rem;
   }
 }
-.colomn-product__image {
+.column-product__image {
   flex: 0 0 56.5%;
   border-radius: 1rem 0 0 1rem;
   overflow: hidden;
   border: 1px solid #e5e7eb;
   background-color: #f6f7f8;
 }
-.colomn-product--reverse .colomn-product__image {
+.column-product--reverse .column-product__image {
   border-radius: 0 1rem 1rem 0;
 }
-.colomn-product__image img {
+.column-product__image img {
   width: 100%;
   aspect-ratio: 644/402;
   object-fit: cover;
   flex: 0 0 70%;
 }
 @media (max-width: 71.75em) {
-  .colomn-product__image {
+  .column-product__image {
     border-radius: 1rem;
   }
-  .colomn-product--reverse .colomn-product__image {
+  .column-product--reverse .column-product__image {
     border-radius: 1rem;
   }
 }
 @media (max-width: 47.99875em) {
-  .colomn-product__image {
+  .column-product__image {
     flex: 0 0 100%;
   }
 }
@@ -1311,11 +1313,12 @@ p .block-hero__text :not(:last-child) {
   flex-direction: column;
   gap: 1.5rem;
 }
-.services__colomn {
+.services__column {
   display: flex;
   gap: 1.5rem;
   flex-wrap: wrap;
 }
+
 .header-services {
   display: flex;
   flex-direction: column;
@@ -1353,7 +1356,7 @@ p .block-hero__text :not(:last-child) {
   gap: 0.75rem;
   min-height: 15.5rem;
   flex: 1 0 31rem;
-  box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.05);
+  box-shadow: 0 1px 2px 0 rgba(16, 24, 40, 0.05);
   border: 1px solid rgba(255, 255, 255, 0.15);
   border-radius: 1rem;
 }
@@ -1465,6 +1468,7 @@ p .block-hero__text :not(:last-child) {
     grid-template-columns: repeat(auto-fit, minmax(18.125rem, 1fr));
   }
 }
+
 .header-questions {
   display: flex;
   flex-direction: column;
@@ -1496,7 +1500,7 @@ p .block-hero__text :not(:last-child) {
 }
 
 .row-questions {
-  box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.05);
+  box-shadow: 0 1px 2px 0 rgba(16, 24, 40, 0.05);
   border: 1px solid #e5e7eb;
   background-color: #ffffff;
   padding: 1.5rem 2rem;
@@ -1681,11 +1685,11 @@ p .block-hero__text :not(:last-child) {
   padding-bottom: 0;
 }
 
-.colomn-product--footer-content .footer-content {
+.column-product--footer-content .footer-content {
   display: flex;
   gap: 1.25rem;
 }
-.colomn-product--footer-content .footer-content__block {
+.column-product--footer-content .footer-content__block {
   display: grid;
   gap: 0.25rem;
 }
@@ -1894,7 +1898,7 @@ p .block-hero__text :not(:last-child) {
   }
 }
 .partners__title {
-  font-family: "Manrope";
+  font-family: "Manrope", sans-serif;
   font-size: 1rem;
   line-height: 1.6;
   text-align: center;
@@ -2124,7 +2128,7 @@ p .block-hero__text :not(:last-child) {
 }
 
 .thank {
-  box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.05);
+  box-shadow: 0 1px 2px 0 rgba(16, 24, 40, 0.05);
   border: 1px solid rgb(229, 231, 235);
   background-color: #ffffff;
   padding: 2rem;

@@ -65,7 +65,7 @@
     // .menu-footer__title
 
     &__title {
-        font-family: 'Manrope';
+        font-family: 'Manrope', sans-serif;
         line-height: 1.6;
         font-weight: 600;
         color: $darkColor;
@@ -76,11 +76,8 @@
         gap: toRem(12);
     }
 
-    &__item {
-    }
-
     &__link {
-        font-family: 'Manrope';
+        font-family: 'Manrope',sans-serif;
         font-weight: 500;
         line-height: 1.6;
         transition: all 0.3s;
@@ -101,12 +98,6 @@
     align-items: center;
     gap: toRem(30);
 
-    &__copi {
-    }
-
-    &__social {
-
-    }
 }
 .social-icons {
     display: flex;
