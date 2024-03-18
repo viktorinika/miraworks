@@ -2049,6 +2049,9 @@ p .block-hero__text :not(:last-child) {
     flex: 100%;
   }
 }
+.address-contact h2, .address-contact--title {
+  font-size: 2rem;
+}
 .address-contact__text {
   display: grid;
   gap: 1.25rem;
@@ -2067,7 +2070,7 @@ p .block-hero__text :not(:last-child) {
 .form-contact {
   flex: 0 1 29.5rem;
   background-color: #ffffff;
-  box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.05);
+  box-shadow: 0 1px 2px 0 rgba(16, 24, 40, 0.05);
   border: 1px solid #e5e7eb;
   border-radius: 1rem;
   overflow: hidden;
